@@ -1,0 +1,14 @@
+/* .skillbox{
+    display: flex;
+    border:1px solid black;
+    background-color: #ccc;
+    
+
+} */
+.hobbies-grid{
+display: grid;
+grid-template-columns:repeat(3,316px);
+grid-template-rows: repeat(2,220px);
+grid-gap: 16px;
+}
+
