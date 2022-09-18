@@ -1,7 +1,5 @@
 
-.article {
-  /* font-size: 18px; */
-}
+
 
 .article h1 {
   font-size: 36px;
@@ -55,17 +53,6 @@
   font-style: italic;
 }
 
-/* Other blockquote */
-/* .article blockquote {
-  margin: 24px 0;
-  border-left: 5px solid #77E297;
-  background-color: #CCFAE1;
-  color: var(--green-900);
-  padding: 16px 18px;
-  font-weight: 400;
-  line-height: 32px;
-  font-style: italic;
-} */
 
 .article figure {
   margin: 32px 0;
@@ -103,6 +90,3 @@
   padding: 3rem;
 }
 
-.article-summary__card {
-  /* border: 1px solid red; */
-}
