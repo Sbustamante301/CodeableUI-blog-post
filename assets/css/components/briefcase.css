@@ -1,0 +1,65 @@
+.briefcase-summary__header {
+  margin-bottom: 3rem;
+  text-align: center; 
+}
+
+.briefcase-summary__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.briefcase-summary__tag {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.tag--content {
+  display: inline-block;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  border-radius: 10px;
+  color: var(--gray-900);
+  background-color: var(--green-100);
+}
+
+.briefcase-card {
+  padding: 1.5rem;
+}
+
+.briefcase-card__icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.briefcase-card__icon-container {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.briefcase-card__icon-card {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  background-color: var(--gray-100);
+}
+
+.briefcase-card__icon-card svg {
+  width: 4rem;
+  height: 1.5rem;
+}
+
+.briefcase-card__icon-card-url {
+  text-decoration: none;
+  color: var(--gray-300);
+}
+
+.briefcase-card__icon-card-url:hover {
+  color: var(--gray-400);
+}

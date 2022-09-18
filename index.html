@@ -9,21 +9,34 @@
   </head>
   <body>
     <header class="header">
-      <div class="container-lg">
+      <div class="container-lg py-1">
         <nav class="navbar">
-          <a href="index.html" class="header__logo text-decoration-none">
+          <input type="checkbox" id="menu-mobile" />
+          <a href="/index.html" class="header__logo text-decoration-none outline-none">
             <h1 class="head-md semibold">Sebastian Bustamante</h1>
+            
+            <div>
+              <!-- option 1 -->
+              <label for="menu-mobile" id="toggle-close">
+                <i class="ri-close-line ri-xl"></i>
+              </label>
+  
+              <!-- option 2 -->
+              <label for="menu-mobile" id="toggle-open">
+                <i class="ri-menu-line  ri-xl"></i>
+              </label>
+            </div>
           </a>
-          <ul class="navbar__links list-style-none">
-            <li><a href="index.html" class="link text semibold">Articles</a></li>
+          <ul class="expandable navbar__links list-style-none">
+            <li><a href="/article.html" class="link text semibold">Articles</a></li>
             <li>
-              <a href="#" class="link text semibold">Portafolio</a>
+              <a href="/briefcase.html" class="link text semibold">Portafolio</a>
             </li>
-            <li><a href="about.html" class="link text semibold">About</a></li>
+            <li><a href="/about.html" class="link text semibold">About</a></li>
             <li>
               <a
-                href="#"
-                class="button button--primary button--sm text-decoration-none"
+                href="/contact.html"
+                class="button button--primary button--sm text-decoration-none w-full"
               >
                 Contact Me
               </a>

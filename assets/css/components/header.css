@@ -1,41 +1,122 @@
 .header {
-    background-color: var(--primary-darker);
+  background-color: var(--primary-darker);
+}
+
+.header__logo {
+  color: var(--primary-light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1.5em;
+  align-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar__links .link {
+  text-decoration: none;
+  color: var(--primary-regular);
+  padding: .5em .75em;
+  border-radius: .5em;
+}
+
+.navbar__links .link:hover {
+  background-color: var(--green-800);
+}
+
+.navbar__links .link:focus,
+.header__logo:focus {
+  outline: 2px solid var(--outline-primary);
+  outline-offset: 1px;
+}
+
+#menu-mobile,
+#toggle-close,
+#toggle-open {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .navbar,
+  #toggle-close,
+  #toggle-open {
+    display: block;
   }
-  
+
+  .navbar__links {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .navbar__links li:last-child {
+    width: 100%;
+  }
+
+  .expandable {
+    display: none;
+  }
+
+  #menu-mobile:checked ~ .expandable {
+    display: flex;
+  }
+
   .header__logo {
-    color: var(--primary-light)
-  }
-  
-  .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: baseline;
   }
-  
-  .navbar__links {
-    display: flex;
-    gap: 1.5em;
-    align-content: center;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  
-  .navbar__links .link {
-    text-decoration: none;
-    color: var(--primary-regular);
-    padding: .5em .75em;
-    border-radius: .5em;
-  }
-  
-  .navbar__links .link:hover {
-    background-color: var(--green-800);
-  }
-  
-  .navbar__links .link:focus,
+
   .header__logo:focus {
-    outline: 2px solid var(--outline-primary);
-    outline-offset: 1px;
+    outline: none;
   }
-  
-  
+
+  #toggle-close,
+  #toggle-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    color: var(--white);
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+
+  #menu-mobile:checked ~ * #toggle-open,
+  #menu-mobile:not(:checked) ~ * #toggle-close {
+    opacity: 0;
+    animation: spin 1s linear;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+}
+

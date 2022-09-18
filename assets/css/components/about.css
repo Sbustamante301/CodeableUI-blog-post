@@ -1,14 +1,54 @@
-/* .skillbox{
-    display: flex;
-    border:1px solid black;
-    background-color: #ccc;
-    
-
-} */
-.hobbies-grid{
-display: grid;
-grid-template-columns:repeat(3,316px);
-grid-template-rows: repeat(2,220px);
-grid-gap: 16px;
+.about-summary__header,
+.about-hobbies__header {
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
+.about-summary__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about-card svg {
+  width: 3rem;
+  height: 2rem;
+  fill: var(--green-600)
+}
+
+.about-hobbies {
+  background-color: var(--gray-100);
+}
+
+.about-hobbies__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.about-hobbies__content-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies-card__image {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.hobbies-card__paragraph {
+  text-align: center;
+  padding: .5rem .5rem;
+}

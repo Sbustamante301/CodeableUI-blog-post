@@ -4,28 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>About Me</title>
   </head>
   <body>
     <header class="header">
-      <div class="container-lg">
+      <div class="container-lg py-1">
         <nav class="navbar">
-          <a href="index.html" class="header__logo text-decoration-none">
+          <input type="checkbox" id="menu-mobile" />
+          <a href="/index.html" class="header__logo text-decoration-none outline-none">
             <h1 class="head-md semibold">Sebastian Bustamante</h1>
+            
+            <div>
+              <!-- option 1 -->
+              <label for="menu-mobile" id="toggle-close">
+                <i class="ri-close-line ri-xl"></i>
+              </label>
+  
+              <!-- option 2 -->
+              <label for="menu-mobile" id="toggle-open">
+                <i class="ri-menu-line  ri-xl"></i>
+              </label>
+            </div>
           </a>
-          <ul class="navbar__links list-style-none">
+          <ul class="expandable navbar__links list-style-none">
+            <li><a href="/article.html" class="link text semibold">Articles</a></li>
             <li>
-              <a href="index.html" class="link text semibold">Articles</a>
+              <a href="/briefcase.html" class="link text semibold">Portafolio</a>
             </li>
-            <li>
-              <a href="#" class="link text semibold">Portafolio</a>
-            </li>
-            <li><a href="about.html" class="link text semibold">About</a></li>
+            <li><a href="/about.html" class="link text semibold">About</a></li>
             <li>
               <a
                 href="#"
-                class="button button--primary button--sm text-decoration-none"
+                class="button button--primary button--sm text-decoration-none w-full"
               >
                 Contact Me
               </a>
@@ -34,148 +45,138 @@
         </nav>
       </div>
     </header>
-    <section class="py-3 bg-primary-darker text-white">
+
+    <section class="section-md">
       <div class="container-lg">
-        <h2 class="head-xl regular mb-1">
-          Hi I'm
-          <strong class="semibold text-primary-regular"
-            >Sebastian Bustamante</strong
-          >, full stack developer looking for new adventures
+        <h2 class="head-xl medium mb-1">
+          Hi! I’m <strong class="semibold pink-600">Sebastian Bustamante</strong>, full
+          stack developer looking for new adventures
         </h2>
-        <p class="text-xl light">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget velit
-          risus tellus viverra luctus in odio amet. Quisque viverra integer
-          lectus euismod quisque adipiscing. Sed posuere sed bibendum mi orci,
-          commodo, quam. Sagittis, donec sit bibendum mi nisl semper sed.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolor
+          magni impedit facere totam maxime aliquam facilis! Ex praesentium,
+          ratione laboriosam impedit animi corrupti error qui, repudiandae odit
+          quo minus.
         </p>
       </div>
     </section>
 
-    <main class="section-md article-summary">
-      <div class="container-lg">
-        <div class="article-summary__header">
+    <main class="section-md">
+      <section class="container-lg py-3">
+        <div class="about-summary__header">
           <h2 class="head-lg semibold">My Skills</h2>
         </div>
-
-        <div class="article-summary__content">
-          <section class="skillbox">
-            <div class="icon">
-              <img src="assets/css/icon/check.svg" alt="check icon" />
+        <div class="about-summary__content">
+          <div class="about-card">
+            <svg><use xlink:href="#check"></svg>
+            <div>
+              <h3 class="head-sm medium">Ruby</h3>
+              <p class="text-lg regular my-0.5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                vel repellat. Quo suscipit, non.
+              </p>
             </div>
-            <h3 class="head-sm regular my-0.5">Ruby</h3>
-
-            <p class="text-lg light my-0.5">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </section>
-
-          <section>
-            <div class="icon">
-              <img src="assets/css/icon/check.svg" alt="check icon" />
+          </div>
+          <div class="about-card">
+            <svg><use xlink:href="#check"></svg>
+            <div>
+              <h3 class="head-sm medium">Ruby on Rails</h3>
+              <p class="text-lg regular my-0.5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                vel repellat. Quo suscipit, non.
+              </p>
             </div>
-            <h3 class="head-sm regular my-0.5">Ruby on rails</h3>
-
-            <p class="text-lg light my-0.5">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </section>
-
-          <section>
-            <div class="icon">
-              <img src="assets/css/icon/check.svg" alt="check icon" />
+          </div>
+          <div class="about-card">
+            <svg><use xlink:href="#check"></svg>
+            <div>
+              <h3 class="head-sm medium">Javascript</h3>
+              <p class="text-lg regular my-0.5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                vel repellat. Quo suscipit, non.
+              </p>
             </div>
-            <h3 class="head-sm regular my-0.5">Javascript</h3>
-
-            <p class="text-lg light my-0.5">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </section>
-
-          <section>
-            <div class="icon">
-              <img src="assets/css/icon/check.svg" alt="check icon" />
+          </div>
+          <div class="about-card">
+            <svg><use xlink:href="#check"></svg>
+            <div>
+              <h3 class="head-sm medium">React</h3>
+              <p class="text-lg regular my-0.5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                vel repellat. Quo suscipit, non.
+              </p>
             </div>
-            <h3 class="head-sm regular my-0.5">React</h3>
-
-            <p class="text-lg light my-0.5">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </section>
-
-          <section>
-            <div class="icon">
-              <img src="assets/css/icon/check.svg" alt="check icon" />
+          </div>
+          <div class="about-card">
+            <svg><use xlink:href="#check"></svg>
+            <div>
+              <h3 class="head-sm medium">Git & Github</h3>
+              <p class="text-lg regular my-0.5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                vel repellat. Quo suscipit, non.
+              </p>
             </div>
-            <h3 class="head-sm regular my-0.5">Git & Github</h3>
-
-            <p class="text-lg light my-0.5">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </section>
-
-          <section>
-            <div class="icon">
-              <img src="assets/css/icon/check.svg" alt="check icon" />
+          </div>
+          <div class="about-card">
+            <svg><use xlink:href="#check"></svg>
+            <div>
+              <h3 class="head-sm medium">Postgresql</h3>
+              <p class="text-lg regular my-0.5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+                vel repellat. Quo suscipit, non.
+              </p>
             </div>
-            <h3 class="head-sm regular my-0.5">Postgresql</h3>
-
-            <p class="text-lg light my-0.5">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
-            </p>
-          </section>
+          </div>
         </div>
-
-        <div class="article-summary__header">
+      </section>
+    </main>
+    
+    <section class="section-md about-hobbies">
+      <div class="container-lg py-3">
+        <div class="about-hobbies__header">
           <h2 class="head-lg semibold">My Hobbies</h2>
         </div>
-
-        <div class="hobbies-grid">
-          <section>
-            <img class="border-radius-8px"
-              src="https://i.pinimg.com/736x/21/21/a1/2121a1248639cff1f805969d55195ea6.jpg" width="300px" height="220px"
-              alt="burger"
-            />
-          </section>
-          <section>
-            <h3 class="head-md semibold my-0.5 text-align-center">Food</h3>
-            <p class="text-xl light my-0.5 text-align-center line-height-30px ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Ullamcorper cursus at viverra netus mauris, fermentum felis.
+        <div class="about-hobbies__content">
+          <img src="assets/image/sushi.avif" class="hobbies-card__image" alt="food_1" />
+          <div class="py-0.5 about-hobbies__content-body">
+            <h3 class="head-md semibold center">
+              Food
+            </h3>
+            <p class="text-xl regular hobbies-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id corporis, magnam inventore excepturi mollitia officiis quos.
             </p>
-          </section>
-          <section>
-            <img class="border-radius-8px"
-              src="https://assets.unileversolutions.com/recipes-v2/237341.jpg"
-              alt="sushi"
-            />
-          </section>
-          <section>
-            <h3 class="head-sm regular my-0.5 text-align-center">Travel</h3>
-            <p class="text-xl light my-0.5 text-align-center line-height-30px">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Ullamcorper cursus at viverra netus mauris, fermentum felis.
+          </div>
+          <img src="assets/image/lomo-saltado.jpg" class="hobbies-card__image" alt="food_2" />
+          <div class="py-0.5 about-hobbies__content-body">
+            <h3 class="head-md semibold center">
+              Travel
+            </h3>
+            <p class="text-xl regular hobbies-card__paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id corporis, magnam inventore excepturi mollitia officiis quos.
             </p>
-          </section>
-          <section>
-            <img class=" border-radius-8px"
-              src="https://inmobiliare.com/himalaya/wp-content/uploads/2020/05/vivienda-cdmx-valor.png" width="300px" height="210px"
-              alt="cdmx"
-            />
-          </section>
-          <section>
-            <img class="border-radius-8px"
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2glMjBzZWF8ZW58MHx8MHx8&w=1000&q=80"
-              alt="beach"
-            />
-          </section>
+          </div>
+          <img src="assets/image/cancun.jpg" class="hobbies-card__image" alt="travel_1" />
+          <img src="assets/image/adelaide.jpg" class="hobbies-card__image" alt="travel_2" />
         </div>
       </div>
-    </main>
+    </section>
+
+    <footer class="footer">
+      <div class="container-md footer__content">
+        <h2 class="head-xl semibold">Can I help you?</h2>
+        <button class="button button--lg button--primary">get in touch!</button>
+      </div>
+    </footer>
+
+    <!-- Upload svg images -->
+    <div hidden>
+      <svg xmlns="http://www.w3.org/2000/svg">
+
+        <symbol id="check" viewBox="0 0 26 26">
+          <path d="M7.02724 2.52794C8.05614 2.44583 9.03293 2.04124 9.81853 1.37175C11.6518 -0.190567 14.3482 -0.190567 16.1815 1.37175C16.9671 2.04124 17.9439 2.44583 18.9728 2.52794C21.3738 2.71955 23.2805 4.62618 23.4721 7.02724C23.5542 8.05614 23.9588 9.03293 24.6283 9.81853C26.1906 11.6518 26.1906 14.3482 24.6283 16.1815C23.9588 16.9671 23.5542 17.9439 23.4721 18.9728C23.2805 21.3738 21.3738 23.2805 18.9728 23.4721C17.9439 23.5542 16.9671 23.9588 16.1815 24.6283C14.3482 26.1906 11.6518 26.1906 9.81853 24.6283C9.03293 23.9588 8.05614 23.5542 7.02724 23.4721C4.62618 23.2805 2.71955 21.3738 2.52794 18.9728C2.44583 17.9439 2.04124 16.9671 1.37175 16.1815C-0.190567 14.3482 -0.190567 11.6518 1.37175 9.81853C2.04124 9.03293 2.44583 8.05614 2.52794 7.02724C2.71955 4.62618 4.62618 2.71955 7.02724 2.52794ZM18.9314 10.9314C19.5562 10.3065 19.5562 9.29348 18.9314 8.66864C18.3065 8.0438 17.2935 8.0438 16.6686 8.66864L11.4 13.9373L9.33138 11.8686C8.70654 11.2438 7.69348 11.2438 7.06864 11.8686C6.4438 12.4935 6.4438 13.5065 7.06864 14.1314L10.2686 17.3314C10.8935 17.9562 11.9065 17.9562 12.5314 17.3314L18.9314 10.9314Z" fill="#10B981" />
+        </symbol>
+
+      </svg>
+    </div>
   </body>
 </html>
